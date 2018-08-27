@@ -7,25 +7,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var EmployeeComponent = /** @class */ (function () {
-    function EmployeeComponent() {
-        this.columnSpan = 2;
+var BindingComponent = /** @class */ (function () {
+    function BindingComponent() {
+        this.pageHeader = null;
+        this.isDisabled = false;
+        this.imagePath = 'https://avatars1.githubusercontent.com/u/34881715?s=460&v=4';
         this.firstName = "Tohid";
         this.lastName = "Taghizad";
-        this.gender = "Male";
-        this.age = 30;
-        this.showDetails = false;
+        this.name = "tohid";
     }
-    EmployeeComponent.prototype.toggleDetails = function () {
-        this.showDetails = !this.showDetails;
+    BindingComponent.prototype.getFullName = function () {
+        return this.firstName + ' ' + this.lastName;
     };
-    EmployeeComponent = __decorate([
+    BindingComponent = __decorate([
         core_1.Component({
-            selector: 'my-employee',
-            templateUrl: 'app/employee/employee.component.html'
+            selector: 'binding-component',
+            templateUrl: 'app/binding/binding.component.html',
         })
-    ], EmployeeComponent);
-    return EmployeeComponent;
+    ], BindingComponent);
+    return BindingComponent;
 }());
-exports.EmployeeComponent = EmployeeComponent;
-//# sourceMappingURL=employee.component.js.map
+exports.BindingComponent = BindingComponent;
+//# sourceMappingURL=binding.component.js.map

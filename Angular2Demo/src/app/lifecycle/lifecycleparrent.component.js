@@ -7,16 +7,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var AppComponent = /** @class */ (function () {
-    function AppComponent() {
+var LifecycleParentComponent = /** @class */ (function () {
+    function LifecycleParentComponent() {
+        this.userText = 'Tohid';
     }
-    AppComponent = __decorate([
+    LifecycleParentComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            templateUrl: 'app/app.component.html',
+            selector: 'lifecycle-parent',
+            templateUrl: './lifecycleparent.component.html'
         })
-    ], AppComponent);
-    return AppComponent;
+    ], LifecycleParentComponent);
+    return LifecycleParentComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.LifecycleParentComponent = LifecycleParentComponent;
+//# sourceMappingURL=lifecycleparrent.component.js.map

@@ -10,6 +10,20 @@ table{
     font-size : large;
     border-collapse : collapse;
 }
+th {
+    border: 1px solid black;
+}
 td{
     border : 1px solid black;
+}
+.boldClass {
+    font: bold;
+    font-size: 30px;
+}
+.italicClass{
+    font-style : italic;
+    
+}
+.tutorial{
+    color:red;
 }

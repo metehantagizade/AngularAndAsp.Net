@@ -1,0 +1,13 @@
+﻿<div>
+    <!--add classes in defferent way-->
+    <p [class]='classesToApply'>Italic Class</p> <!--value of classesToApply set as string in typescript page-->
+    <p [class.boldClass]='applyBoldClass'>Add or Remove boldClass</p> <!--if applyBoldClass set to true the class will be apply otherwise not-->
+    <p [ngClass]='addClasses()'>Add or Remove multiple class</p> <!--if we want to add multiple class from angular we can use this method-->
+    <!--add styles to element in different way-->
+    <p [style.font-weight]="isBold ? 'bold' : 'normal'">Add font weight</p> <!--if isBold set to true then font-weight will be bold otherwise normal-->
+    <p [style.font-size.px]="fontSize">Add font size as pixel</p> <!--we can add font-size from angular as same as last example by adding extension on style.font-size.px-->
+    <!--set multiple inline style as follow-->
+    <p [ngStyle]="addStyle()">Add multiple inline style</p>
+    <button (click)='onclick()'>Event Binding</button> <!--instead of (click) we can use on-click on event binding-->
+</div>
+<br /><br />

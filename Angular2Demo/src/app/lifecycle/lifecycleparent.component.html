@@ -1,0 +1,8 @@
+﻿<h2 class="tutorial">Lifecycle Hooks</h2>
+<p class="tutorial">When ever the value of textbox is changed the ngOnChanges method will be call automatically</p>
+<p class="tutorial">Set two war biinding like [(ngModel)]='userText' to userText variable</p>
+<p class="tutorial">After that send userText value to lifecycle component and save in lifecycleInput t display you entered...</p>
+<p class="tutorial">To see result of ngOnChanges method press f12 and go on console tab</p>
+Your text: <input type='text' [(ngModel)]='userText' />
+<br /><br />
+<lifecycle [lifecycleInput]='userText'></lifecycle>

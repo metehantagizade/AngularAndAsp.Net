@@ -71,7 +71,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="src\app\app.component.html" />
+    <Content Include="src\app\binding\binding.component.html" />
+    <Content Include="src\app\employeeList\employeeCount.component.css" />
+    <Content Include="src\app\employeeList\employeeCount.component.html" />
+    <Content Include="src\app\employeeList\employeeList.component.html" />
     <Content Include="src\app\employee\employee.component.html" />
+    <Content Include="src\app\employeeList\employeeList.component.css" />
+    <Content Include="src\app\empstyle\empstyle.component.html" />
+    <Content Include="src\app\lifecycle\lifecycleparent.component.html" />
     <Content Include="src\favicon.ico" />
     <Content Include="src\index.html" />
     <Content Include="src\styles.css" />
@@ -100,7 +107,15 @@
     <TypeScriptCompile Include="src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\binding\binding.component.ts" />
+    <TypeScriptCompile Include="src\app\employeeList\employee.ts" />
+    <TypeScriptCompile Include="src\app\employeeList\employeeCount.component.ts" />
+    <TypeScriptCompile Include="src\app\employeeList\employeeList.component.ts" />
+    <TypeScriptCompile Include="src\app\employeeList\employeeTitle.pipe.ts" />
     <TypeScriptCompile Include="src\app\employee\employee.component.ts" />
+    <TypeScriptCompile Include="src\app\empstyle\empstyle.component.ts" />
+    <TypeScriptCompile Include="src\app\lifecycle\lifecycle.component.ts" />
+    <TypeScriptCompile Include="src\app\lifecycle\lifecycleparrent.component.ts" />
     <TypeScriptCompile Include="src\main.ts" />
   </ItemGroup>
   <ItemGroup>

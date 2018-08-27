@@ -1,0 +1,19 @@
+﻿
+<h1>{{pageHeader ? pageHeader : 'No Header'}}</h1>
+<h1>{{getFullName()}}</h1>
+<img src='{{imagePath}}' style='width:10%;height:10%;' />
+<img [src]='imagePath' style='width:10%;height:10%;' />
+<br />
+<h2 class="tutorial">Property and interPolation binding</h2>
+<button [disabled]='isDisabled'>property binding</button>
+<button bind-disabled='isDisabled'>property binding</button><!--as same as above line-->
+<button disabled='{{isDisabled}}'>interPolation</button><!--is not work correctly on non-string data value-->
+<br /><br />
+<h2 class="tutorial">Two War Binding</h2>
+<p class="tutorial">[value]='name' is a property binding and (input)="name=$event.target.value" is a event binding</p>
+Name : <input [value]='name' (input)="name=$event.target.value" />  <!--(input)="name=$event.target.value" bind html element to component class-->
+<p class="tutorial">this is same as above example bu to use ngModel we have to add FormsModule to app.module</p>
+Name : <input [(ngModel)]="name" /> 
+<br />
+You entered : {{name}}
+<br />
